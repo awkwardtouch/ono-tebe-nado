@@ -27,14 +27,13 @@ body {
   text-decoration: underline;
   text-underline-offset: 4px;
   letter-spacing: 0.01em;
-  line-height: 21.13px
+  line-height: 21.13px;
 }
 
 .header__links-item_no-bullit {
   text-decoration: none;
   list-style-type: none;
 }
-
 
 .header__logo {
   display: block;
@@ -91,7 +90,9 @@ body {
 
 .aligned-text {
   display: block;
+  /* то что высота отличается я видел и задал это тут */
   line-height: 115px;
+  /* !!!!!!!!!!!!!!!!!!!! */
   letter-spacing: 30px;
 }
 
@@ -105,7 +106,9 @@ body {
 
 .aligned-text_center,
 .aligned-text_right {
+  /* и тут */
   line-height: 100px;
+  /* !!!!!!!!!!!!!!!!!!! */
   padding-top: 20px;
 }
 
@@ -113,7 +116,6 @@ body {
   text-align: center;
   padding-right: 60px;
 }
-
 
 .aligned-text_right {
   text-align: right;
@@ -151,7 +153,6 @@ body {
 
 .lots {
   margin: 181px 24px 0px;
-  min-height: 500px;
 }
 
 .lots__heading,
@@ -177,17 +178,6 @@ body {
 
 .lots__card-list-item {
   list-style-type: none;
-  max-height: 563px;
-}
-
-.card_type_film,
-.card_type_book,
-.card_type_picture {
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  z-index: 0;
 }
 
 .card_type_film {
@@ -214,6 +204,11 @@ body {
   color: #fff;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
 }
 
 .card__title {
@@ -243,11 +238,10 @@ body {
 }
 
 .about {
-  min-height: 200px;
   display: grid;
   grid-template-columns: 334px 2fr;
   gap: 25px;
-  margin: 147px 24px 188px;
+  margin: 145px 24px 180px;
 }
 
 .about__column {
@@ -272,7 +266,9 @@ body {
 }
 
 .about__title {
-  height: 240px;
+  /* разрешите оставлю это себе, на память ибо считаю что так правильнее по заданию но сдам с падингом */
+  /* height: 240px; */
+  padding-top: 101px;
   align-content: center;
   align-self: start;
 }
@@ -285,6 +281,7 @@ body {
   padding-right: 5px;
   font-size: 20px;
   line-height: 24px;
+  padding-top: 100px;
 }
 
 .footer {
