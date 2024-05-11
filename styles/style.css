@@ -30,6 +30,10 @@ body {
   line-height: 21.13px;
 }
 
+.link-active {
+  text-decoration: none;
+}
+
 .header__links-item_no-bullit {
   text-decoration: none;
   list-style-type: none;
