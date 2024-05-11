@@ -290,6 +290,7 @@ body {
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 88px;
 }
 
 .footer__address {
